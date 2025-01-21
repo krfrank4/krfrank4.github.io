@@ -1,0 +1,11 @@
+---
+layout: page
+title: Resume
+use-site-title: true
+---
+
+<div id="pdf" style="height: 800px;"></div>
+<script src="/js/pdfobject.min.js"></script>
+<script>
+PDFObject.embed("https://krfrank4.github.io/Franks_Resume_2024.pdf", "#pdf");
+</script>
