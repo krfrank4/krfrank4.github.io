@@ -24,6 +24,20 @@ layout: null
   --mid-col: #808080;
 }
 
+[data-theme="dark"]{
+  --page-col: {{site.dark-page-col | default: "#003142"}};
+  --text-col: {{site.dark-text-col | default: "#87B8C7"}};
+  --link-col: {{site.dark-link-col | default: "#60A0B4"}};
+  --hover-col: {{site.dark-hover-col | default: "#2C7F9B"}};
+  --navbar-col: {{site.dark-navbar-col | default: "#004B64"}};
+  --navbar-text-col: {{site.dark-navbar-text-col | default: "#87B8C7"}};
+  --navbar-border-col: {{site.dark-navbar-border-col | default: "#004B64"}};
+  --footer-col: {{site.dark-footer-col | default: "#004B64"}};
+  --footer-text-col: {{site.dark-footer-text-col | default: "#87B8C7"}};
+  --footer-link-col: {{site.dark-footer-link-col | default: "#60A0B4"}};
+  --footer-hover-col: {{site.dark-footer-hover-col | default: "#2C7F9B"}};
+}
+
 /* --- General --- */
 
 html {
@@ -332,9 +346,13 @@ img {
     background: rgba(0, 0, 0, 0.2);
   }
 
-  .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
+  .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item{
     padding-left: 2rem;
   }
+  /*add padding for theme switch wrapper in mobile view*/
+  .theme-switch-wrapper {
+    padding-left: 1rem;
+  } 
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
@@ -1123,3 +1141,64 @@ pre {
     display: inline-block;
   }
 }
+
+/* --- Dark/light mode switch --- */
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: end;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #0088ad;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+

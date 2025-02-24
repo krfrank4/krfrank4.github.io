@@ -1,5 +1,9 @@
 // Dean Attali / Beautiful Jekyll 2023
 
+//const for theme switch toggle
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
 let BeautifulJekyllJS = {
 
   bigImgEl : null,
@@ -140,3 +144,37 @@ let BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
+
+//Code for theme switch toggle
+//Event handler for the theme switch toggle
+function switchTheme(e) {
+  if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  else {
+      document.documentElement.setAttribute('data-theme', 'light');
+  }    
+}
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+//Store preference in localStorage
+function switchTheme(e) {
+  if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark'); //add this
+  }
+  else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light'); //add this
+  }    
+}
+
+//Check for preference in localStorage
+if (currentTheme) {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  if (currentTheme === 'dark') {
+      toggleSwitch.checked = true;
+  }
+}
