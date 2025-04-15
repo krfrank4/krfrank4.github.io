@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a website
-tags: [personal project, project]
+tags: [personal project, html, css, jekyll, ruby, js]
 ---
 
 When looking for a job in the tech industry, it is important to be able to prove your skills in a competitive market. Having a portfolio of educational work and personal projects is a good idea. I, like many others, thought, why not kill two birds with one stone and create a website? I could use the website as my portfolio and demonstrate my skills at the same time.

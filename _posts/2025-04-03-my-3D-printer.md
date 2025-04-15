@@ -17,7 +17,7 @@ I have done some modifications and upgrades to it as time has gone by. I first a
 
 I had to replace a couple of broken parts on it after a while. The plastic extruder feeder drive arm broke. I replaced it with an aluminum one. The belt tensions weren't working after a while and were difficult to calibrate so I upgraded them. I could have printed both parts but since I needed them to print I had to buy them instead. If I had another printer I could have printed the spare parts. One of the blades on the hot-end fan broke so I also replaced the fan.
 
-![Bubble](/assets/img/Bubble.jpg){: .mx-auto.d-block :}
+![Bubble](/assets/img/bubble.jpg){: .mx-auto.d-block :}
 
 Creatiliy makers of Ender 3 only tin the wires to the control board. Over time the wires get loose after compression. The electricity can creep and heat up the screw terminal which can cause a fire. I put ferrules on all the wires that protect them and replaced the control board with BIGTREETECH SKR Mini E3 V3.0. This [video](https://www.youtube.com/watch?v=8F4zQVzDRww) explains the problem very well as well as how to ferrule the wires. I also got an enclosure to be a little more fire-safe and to keep a more consistent temperature. 
 
