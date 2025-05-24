@@ -4,7 +4,7 @@ title: SER316 Group Project
 tags: [academics, java, json, scrum, github, agile]
 ---
 
-Topics for the class include:
+## 📚 Topics for the class include:
 - Scrum as Agile Development methodology
 - Software change management and source code control (Git/GitHub)
 - Continuous Integration and Testing
