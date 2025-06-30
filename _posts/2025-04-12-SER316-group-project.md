@@ -5,7 +5,7 @@ tags: [academics, java, json, scrum, github, agile]
 ---
 
 ## 📚 Topics for the class include:
-- Scrum as Agile Development methodology
+- Scrum as Agile Development Methodology
 - Software change management and source code control (Git/GitHub)
 - Continuous Integration and Testing
 - Unit Testing
@@ -15,7 +15,7 @@ tags: [academics, java, json, scrum, github, agile]
 - Static and Dynamic Analysis
 - Metrics and Measurements
 
-This class focused on using Github and scrum. We had a group project that ran for the majority of the semester. The task was taking a legauy code base (~25k lines of code) and Refactoring it. The original code was an agenda system and we turned it into a gym membership scheduling system. It was a team of 7 people with varries level in skill. Some knew how to use git/github and others were just starting out. We used Tiaga as our task board and we had a scrum master and Git master that rotated every sprint. We had sprint planning meeting standups and retrospective meetings. We used checkstyle, spotbugs and unit test for measureing and testing the quality of our code.
+This class focused on using Github and Scrum. We had a group project that ran for the majority of the semester. The task was taking a legacy code base (~25k lines of code) and Refactoring it. The original code was an agenda system and we turned it into a gym membership scheduling system. It was a team of 7 people with various levels of skill. Some knew how to use git/github and others were just starting out. We used Tiaga as our task board and we had a scrum master and Git master that rotated every sprint. We had sprint planning meeting standups and retrospective meetings. We used checkstyle, spotbugs, and unit tests for measuring and testing the quality of our code.
 
 ## 💡 Project Features
 
